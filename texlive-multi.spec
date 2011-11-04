@@ -1,5 +1,11 @@
+# revision 13293
+# category Package
+# catalog-ctan undef
+# catalog-date undef
+# catalog-license undef
+# catalog-version undef
 Name:		texlive-multi
-Version:	20111102
+Version:	20111103
 Release:	1
 Summary:	TeXLive multi package
 Group:		Publishing
@@ -35,6 +41,7 @@ TeXLive multi package.
 %{_texmfdistdir}/dvips/multi/2up.pro
 %{_texmfdistdir}/dvips/multi/4up.pro
 %{_texmfdistdir}/dvips/multi/multi.pro
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -45,3 +52,5 @@ TeXLive multi package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
