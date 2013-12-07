@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-multi
 Version:	20111103
-Release:	4
+Release:	5
 Summary:	TeXLive multi package
 Group:		Publishing
 URL:		http://tug.org/texlive
